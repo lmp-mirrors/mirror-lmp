@@ -7,4 +7,6 @@ RUN \
     apk add git openssh-client && \
     pip3 install PyYAML
 
-COPY ./ /src/
+COPY mirror-lmp.py /src/
+COPY lmp-mirrors.yaml /src/
+COPY known_hosts /root/.ssh/known_hosts
