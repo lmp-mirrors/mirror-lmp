@@ -4,7 +4,7 @@ WORKDIR /src
 ENTRYPOINT [ "/src/mirror-lmp.py" ]
 
 RUN \
-    apk add git && \
+    apk add git openssh-client && \
     pip3 install PyYAML
 
 COPY ./ /src/
