@@ -1,0 +1,172 @@
+# The default.xml manifest defines all the git repositories needed to build
+# the LMP. That file points at mirrored copies of each repository living on
+# source.foundries.io. This file describes the origin of each of these mirrors
+# so that subscribers understand where the code comes from and internal
+# mirroring services know what to track.
+
+# New repositories that need to be mirrored to github can be set up with:
+# gh repo create --public lmp-mirrors/${repo}
+#  path="/tmp/keys/${repo}"
+#  mkdir $path
+#  ssh-keygen -t ed25519 -f $path/github-mirror_id
+#  gh repo deploy-key add -R $repo -w -t 'repoz - /opt/lmp-mirrors/{repo}/github-mirror_id' $path/github-mirror_id.pub
+# Then copy the private key to /opts/lmp-mirrors/{repo}/github-mirror_id
+
+meta-arm:
+  url: "https://git.yoctoproject.org/meta-arm"
+  github_mirror: True
+
+meta-freescale-3rdparty:
+  url: "https://github.com/Freescale/meta-freescale-3rdparty"
+  github_mirror: True
+
+meta-freescale:
+  url: "https://git.yoctoproject.org/meta-freescale"
+  github_mirror: True
+
+meta-intel:
+  url: "https://git.yoctoproject.org/meta-intel"
+  github_mirror: True
+
+meta-raspberrypi:
+  url: "https://git.yoctoproject.org/meta-raspberrypi"
+  github_mirror: True
+
+meta-virtualization:
+  url: "https://git.yoctoproject.org/meta-virtualization"
+  github_mirror: True
+
+meta-yocto:
+  url: "https://git.yoctoproject.org/meta-yocto"
+  github_mirror: True
+
+meta-clang:
+  url: "https://github.com/kraj/meta-clang"
+  github_mirror: True
+
+meta-qcom:
+  url: "https://github.com/ndechesne/meta-qcom"
+  github_mirror: True
+
+bitbake:
+  url: "https://github.com/openembedded/bitbake"
+  github_mirror: True
+
+meta-openembedded:
+  url: "https://github.com/openembedded/meta-openembedded"
+  github_mirror: True
+
+openembedded-core:
+  url: "https://github.com/openembedded/openembedded-core"
+  github_mirror: True
+
+meta-linaro:
+  url: "https://git.linaro.org/openembedded/meta-linaro"
+  github_mirror: True
+
+meta-riscv:
+  url: "https://github.com/riscv/meta-riscv"
+  github_mirror: True
+
+meta-rtlwifi:
+  url: "https://github.com/EmbeddedAndroid/meta-rtlwifi.git"
+  github_mirror: True
+
+meta-lts-mixins:
+  url: "https://git.yoctoproject.org/meta-lts-mixins.git"
+  github_mirror: True
+
+meta-rust:
+  url: "https://github.com/meta-rust/meta-rust"
+  github_mirror: True
+
+meta-updater:
+  url: "https://github.com/advancedtelematic/meta-updater.git"
+
+meta-selinux:
+  url: "https://git.yoctoproject.org/meta-selinux.git"
+  github_mirror: True
+
+meta-security:
+  url: "https://git.yoctoproject.org/meta-security.git"
+  github_mirror: True
+
+meta-tegra:
+  url: "https://github.com/OE4T/meta-tegra"
+  github_mirror: True
+
+meta-sunxi:
+  url: "https://github.com/linux-sunxi/meta-sunxi.git"
+  github_mirror: True
+
+meta-toradex-bsp-common:
+  url: "https://git.toradex.com/meta-toradex-bsp-common.git"
+  github_mirror: True
+
+meta-toradex-nxp:
+  url: "https://git.toradex.com/meta-toradex-nxp.git"
+  github_mirror: True
+
+meta-xilinx:
+  url: "https://github.com/xilinx/meta-xilinx"
+  github_mirror: True
+
+meta-xilinx-tools:
+  url: "https://github.com/xilinx/meta-xilinx-tools"
+  github_mirror: True
+
+meta-st-stm32mp:
+  url: "https://github.com/STMicroelectronics/meta-st-stm32mp"
+  github_mirror: True
+
+meta-ti:
+  url: "https://git.yoctoproject.org/meta-ti.git"
+  github_mirror: True
+
+# These are repositories needed to produce the OTA community edition server/client
+ota-community-edition:
+  url: "https://github.com/advancedtelematic/ota-community-edition"
+  interval-minutes: 1440
+ota-campainger:
+  url: "https://github.com/advancedtelematic/campaigner"
+  interval-minutes: 1440
+ota-device-registry:
+  url: "https://github.com/advancedtelematic/ota-device-registry"
+  interval-minutes: 1440
+ota-director:
+  url: "https://github.com/advancedtelematic/director"
+  interval-minutes: 1440
+ota-dockerfiles:
+  url: "https://github.com/advancedtelematic/dockerfiles"
+  interval-minutes: 1440
+ota-libats:
+  url: "https://github.com/advancedtelematic/libats"
+  interval-minutes: 1440
+ota-plus-server:
+  url: "https://github.com/advancedtelematic/ota-plus-server"
+  interval-minutes: 1440
+ota-treehub:
+  url: "https://github.com/advancedtelematic/treehub"
+  interval-minutes: 1440
+ota-tuf:
+  url: "https://github.com/advancedtelematic/ota-tuf"
+  interval-minutes: 1440
+ota-web-events:
+  url: "https://github.com/advancedtelematic/web-events"
+  interval-minutes: 1440
+
+aktualizr:
+  url: "https://github.com/advancedtelematic/aktualizr"
+  interval-minutes: 1440
+tuf-test-vectors:
+  url: "https://github.com/advancedtelematic/tuf-test-vectors"
+  interval-minutes: 10080
+
+# FFTK-1051: extra repos, name should be prefixed by 'extra/'
+extra/aktualizr:
+  url: "https://github.com/uptane/aktualizr"
+  interval-minutes: 1440
+
+extra/meta-updater:
+  url: "https://github.com/uptane/meta-updater"
+  github_mirror: True
