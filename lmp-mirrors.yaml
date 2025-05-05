@@ -45,7 +45,7 @@ meta-clang:
   github_mirror: True
 
 meta-qcom:
-  url: "https://github.com/ndechesne/meta-qcom"
+  url: "https://github.com/qualcomm-linux/meta-qcom"
   github_mirror: True
 
 bitbake:
