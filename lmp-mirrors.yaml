@@ -60,9 +60,9 @@ openembedded-core:
   url: "https://github.com/openembedded/openembedded-core"
   github_mirror: True
 
-meta-linaro:
-  url: "https://git.linaro.org/openembedded/meta-linaro"
-  github_mirror: True
+#meta-linaro:
+#  url: "https://git.linaro.org/openembedded/meta-linaro"
+# github_mirror: True
 
 meta-riscv:
   url: "https://github.com/riscv/meta-riscv"

@@ -26,7 +26,7 @@ spec:
       template:
         spec:
           nodeSelector:
-            infra.foundries.io/gke-nodepool: data
+            cloud.google.com/gke-nodepool: datav2
           restartPolicy: Never
           containers:
             - name: mirror-lmp
