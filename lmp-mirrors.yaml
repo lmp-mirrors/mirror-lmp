@@ -16,14 +16,6 @@ meta-arm:
   url: "https://git.yoctoproject.org/meta-arm"
   github_mirror: True
 
-meta-freescale-3rdparty:
-  url: "https://github.com/Freescale/meta-freescale-3rdparty"
-  github_mirror: True
-
-meta-freescale:
-  url: "https://git.yoctoproject.org/meta-freescale"
-  github_mirror: True
-
 meta-intel:
   url: "https://git.yoctoproject.org/meta-intel"
   github_mirror: True
@@ -38,10 +30,6 @@ meta-virtualization:
 
 meta-yocto:
   url: "https://git.yoctoproject.org/meta-yocto"
-  github_mirror: True
-
-meta-clang:
-  url: "https://github.com/kraj/meta-clang"
   github_mirror: True
 
 meta-qcom:
@@ -60,20 +48,8 @@ openembedded-core:
   url: "https://github.com/openembedded/openembedded-core"
   github_mirror: True
 
-#meta-linaro:
-#  url: "https://git.linaro.org/openembedded/meta-linaro"
-# github_mirror: True
-
-meta-riscv:
-  url: "https://github.com/riscv/meta-riscv"
-  github_mirror: True
-
 meta-rtlwifi:
   url: "https://github.com/EmbeddedAndroid/meta-rtlwifi.git"
-  github_mirror: True
-
-meta-lts-mixins:
-  url: "https://git.yoctoproject.org/meta-lts-mixins.git"
   github_mirror: True
 
 meta-rust:
@@ -89,26 +65,6 @@ meta-selinux:
 
 meta-security:
   url: "https://git.yoctoproject.org/meta-security.git"
-  github_mirror: True
-
-meta-sunxi:
-  url: "https://github.com/linux-sunxi/meta-sunxi.git"
-  github_mirror: True
-
-meta-toradex-bsp-common:
-  url: "https://git.toradex.com/meta-toradex-bsp-common.git"
-  github_mirror: True
-
-meta-toradex-nxp:
-  url: "https://git.toradex.com/meta-toradex-nxp.git"
-  github_mirror: True
-
-meta-st-stm32mp:
-  url: "https://github.com/STMicroelectronics/meta-st-stm32mp"
-  github_mirror: True
-
-meta-ti:
-  url: "https://git.yoctoproject.org/meta-ti.git"
   github_mirror: True
 
 # These are repositories needed to produce the OTA community edition server/client
