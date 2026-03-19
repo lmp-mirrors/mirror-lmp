@@ -91,10 +91,6 @@ meta-security:
   url: "https://git.yoctoproject.org/meta-security.git"
   github_mirror: True
 
-meta-tegra:
-  url: "https://github.com/OE4T/meta-tegra"
-  github_mirror: True
-
 meta-sunxi:
   url: "https://github.com/linux-sunxi/meta-sunxi.git"
   github_mirror: True
