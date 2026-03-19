@@ -103,14 +103,6 @@ meta-toradex-nxp:
   url: "https://git.toradex.com/meta-toradex-nxp.git"
   github_mirror: True
 
-meta-xilinx:
-  url: "https://github.com/xilinx/meta-xilinx"
-  github_mirror: True
-
-meta-xilinx-tools:
-  url: "https://github.com/xilinx/meta-xilinx-tools"
-  github_mirror: True
-
 meta-st-stm32mp:
   url: "https://github.com/STMicroelectronics/meta-st-stm32mp"
   github_mirror: True
