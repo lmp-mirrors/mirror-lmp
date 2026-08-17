@@ -48,10 +48,6 @@ openembedded-core:
   url: "https://github.com/openembedded/openembedded-core"
   github_mirror: True
 
-meta-rtlwifi:
-  url: "https://github.com/EmbeddedAndroid/meta-rtlwifi.git"
-  github_mirror: True
-
 meta-rust:
   url: "https://github.com/meta-rust/meta-rust"
   github_mirror: True
